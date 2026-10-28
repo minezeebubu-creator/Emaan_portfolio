@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100b20">
+<title>Emaan Fatima | Freelancer Portfolio</title>
+<style>
+:root{--bg:#0b0817;--panel:#15102a;--panel2:#1b1438;--purple:#7957ff;--purple2:#9b7bff;--text:#f7f3ff;--muted:#b8add6;--line:rgba(190,168,255,.17)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 18% 15%,#271653 0,transparent 36%),radial-gradient(ellipse at 90% 55%,#201447 0,transparent 32%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.nav{position:sticky;top:12px;z-index:10;margin:16px auto 0;width:min(1120px,calc(100% - 24px));padding:10px;border:1px solid var(--line);border-radius:50px;background:rgba(17,12,36,.9);backdrop-filter:blur(16px);display:flex;gap:7px;align-items:center;justify-content:center;flex-wrap:wrap}.nav a{padding:10px 17px;border-radius:30px;color:var(--muted);font-weight:700;font-size:.92rem}.nav a:hover,.nav a.active{background:var(--purple);color:white}.hero{min-height:78vh;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:40px;padding-top:65px;padding-bottom:75px}.eyebrow{display:inline-block;padding:8px 14px;border:1px solid #5540b5;background:#20164a;border-radius:30px;color:#ded3ff;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem;font-weight:700}.hero h1{font-size:clamp(3.1rem,8vw,6.5rem);line-height:.98;letter-spacing:-.055em;margin:22px 0 16px;text-transform:uppercase}.hero h1 span{color:var(--purple2)}.sub{font-size:1.1rem;color:#e2d9ff;font-weight:700}.intro{font-size:1.08rem;color:var(--muted);max-width:680px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:40px;font-weight:800;border:1px solid var(--line);background:transparent}.btn.primary{background:var(--purple);border-color:var(--purple);box-shadow:0 8px 32px #7957ff38}.btn:hover{transform:translateY(-2px)}.profile{border:1px solid var(--line);background:linear-gradient(145deg,#211647,#110d24);border-radius:28px;padding:30px;text-align:center;box-shadow:0 20px 60px #0003}.avatar{height:120px;width:120px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#a48aff,#4f30e8);font-size:2.4rem;font-weight:900;box-shadow:0 0 45px #7957ff55}.profile h2{margin:0;font-size:1.35rem}.profile p{margin:3px 0;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:23px}.stat{padding:12px 5px;border:1px solid var(--line);border-radius:15px}.stat b{display:block;font-size:1.1rem}.stat small{color:var(--muted);font-size:.66rem;text-transform:uppercase;letter-spacing:.08em}.section{padding:64px 0}.section-head{margin-bottom:28px}.kicker{color:var(--purple2);font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:.76rem}.section h2{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.08;margin:8px 0 12px;text-transform:uppercase}.section-head p{color:var(--muted);max-width:680px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{padding:27px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(29,20,57,.95),rgba(16,11,31,.95))}.card .num{color:var(--purple2);font-weight:900;letter-spacing:.1em;font-size:.8rem}.card h3{font-size:1.45rem;margin:8px 0}.card p{color:var(--muted);margin:0}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{min-height:210px;padding:22px;display:flex;flex-direction:column;justify-content:end;border:1px solid var(--line);border-radius:22px;background:radial-gradient(circle at 75% 20%,#5736b6 0,transparent 40%),linear-gradient(145deg,#211643,#100c20)}.project .label{color:#d7c9ff;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;font-weight:800}.project h3{margin:8px 0 4px}.project p{margin:0;color:var(--muted);font-size:.92rem}.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:center}.about-box{padding:28px;border-radius:24px;background:linear-gradient(145deg,#281955,#120d25);border:1px solid var(--line)}.about-box p{color:var(--muted)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-item{display:flex;gap:15px;align-items:center;padding:18px;border:1px solid var(--line);border-radius:18px;background:#17112d}.contact-icon{width:46px;height:46px;flex-shrink:0;display:grid;place-items:center;background:#34226d;border-radius:14px;font-size:1.2rem}.contact-item small{display:block;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}.contact-item strong{overflow-wrap:anywhere}.contact-note{color:var(--muted);margin-top:18px}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center;font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:28px;min-height:auto;padding-top:55px}.profile{max-width:430px}.grid,.projects,.about,.contact-grid{grid-template-columns:1fr}.nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;border-radius:22px}.nav a{white-space:nowrap;padding:10px 13px}.section{padding:48px 0}.hero h1{font-size:clamp(3rem,16vw,5rem)}.card{padding:23px}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main navigation">
+<a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+<main>
+<section class="hero wrap" id="home">
+<div>
+<span class="eyebrow">Available for freelance projects</span>
+<h1>Emaan <span>Fatima</span></h1>
+<div class="sub">FREELANCE VIDEO, WEB & SOCIAL MEDIA CREATIVE</div>
+<p class="intro">I help brands and creators build a stronger online presence through polished video editing, modern websites, engaging graphics, and social media content.</p>
+<div class="actions"><a class="btn primary" href="#work">See My Work ↘</a><a class="btn" href="#contact">Let's Talk ↗</a></div>
+</div>
+<aside class="profile">
+<div class="avatar">EF</div><h2>Emaan Fatima</h2><p>Video · Web · Social · Design</p>
+<div class="stats"><div class="stat"><b>Creative</b><small>Approach</small></div><div class="stat"><b>Quality</b><small>Focused</small></div><div class="stat"><b>Reliable</b><small>Support</small></div></div>
+</aside>
+</section>
+<section class="section wrap" id="services">
+<div class="section-head"><span class="kicker">What I do</span><h2>Services</h2><p>Creative digital support for businesses, creators, and growing brands.</p></div>
+<div class="grid">
+<article class="card"><span class="num">01 / WEBSITES</span><h3>Website Development</h3><p>Modern, responsive websites and portfolio pages designed to present your brand clearly.</p></article>
+<article class="card"><span class="num">02 / VIDEO</span><h3>Video Editing</h3><p>Short-form and long-form edits with clean cuts, engaging pacing, captions, and storytelling.</p></article>
+<article class="card"><span class="num">03 / DESIGN</span><h3>Graphic Design</h3><p>Thumbnails, social posts, and visual assets that keep your content looking consistent.</p></article>
+<article class="card"><span class="num">04 / MOTION</span><h3>Motion Graphics</h3><p>Animated titles, text effects, and visual elements to help content stand out.</p></article>
+<article class="card"><span class="num">05 / YOUTUBE</span><h3>YouTube Support</h3><p>Help with content preparation, video workflows, and channel publishing tasks.</p></article>
+<article class="card"><span class="num">06 / SOCIAL</span><h3>Social Media Marketing</h3><p>Content planning, creative posts, and publishing support for your online presence.</p></article>
+</div>
+</section>
+<section class="section wrap" id="work">
+<div class="section-head"><span class="kicker">Selected projects</span><h2>Portfolio</h2><p>Replace these sample cards with your real work, screenshots, and video links.</p></div>
+<div class="projects">
+<article class="project">
+<span class="label">Video editing</span>
+<h3>YouTube Video Editing</h3>
+<p>Open the shared project resource. The provided link is a Google Sheets document, so replace it with the actual video link if this is not your intended sample.</p>
+<a class="btn primary" style="margin-top:16px;align-self:flex-start" href="https://docs.google.com/spreadsheets/d/1p2AX3R_u6PUo7G9hR2wLLUBePdXriVIMvGpxTnD7Mf4/edit?usp=drivesdk" target="_blank" rel="noopener">View Project ↗</a>
+</article>
+<article class="project">
+<span class="label">Graphic design</span>
+<h3>YouTube Thumbnail Design</h3>
+<p>Open the shared Google Drive folder to view the thumbnail samples. Make sure the folder is shared with anyone who has the link.</p>
+<a class="btn primary" style="margin-top:16px;align-self:flex-start" href="https://drive.google.com/drive/folders/1419wdxvu1WWEcWyZDwrDuTt9tePn6XR7" target="_blank" rel="noopener">View Thumbnails ↗</a>
+</article>
+<article class="project">
+<span class="label">More projects</span>
+<h3>More Work Coming Soon</h3>
+<p>More video edits and design samples will be added here as the portfolio grows.</p>
+</article>
+</div>
+</section>
+<section class="section wrap" id="about">
+<div class="about"><div><span class="kicker">A little about me</span><h2>Creative work, clear communication.</h2></div><div class="about-box"><p>Hi, I'm Emaan Fatima. I support brands and creators with digital creative services, from video editing and graphic design to websites and social media content.</p><p>I'm focused on understanding each project's goals, communicating clearly, and delivering work that fits the brief. Explore my services and get in touch to discuss your project.</p></div></div>
+</section>
+<section class="section wrap" id="contact">
+<div class="section-head"><span class="kicker">Let's work together</span><h2>Contact me</h2><p>Have a project in mind? Reach out using any of the options below.</p></div>
+<div class="contact-grid">
+<a class="contact-item" href="mailto:emaan57865@gmail.com"><span class="contact-icon">✉</span><span><small>Email</small><strong>emaan57865@gmail.com</strong></span></a>
+<a class="contact-item" href="tel:+923207119621"><span class="contact-icon">☎</span><span><small>Phone</small><strong>03207119621</strong></span></a>
+<a class="contact-item" href="https://wa.me/923207119621" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span><small>WhatsApp</small><strong>Message me directly</strong></span></a>
+<a class="contact-item" href="mailto:emaan57865@gmail.com?subject=Freelance%20project%20inquiry"><span class="contact-icon">↗</span><span><small>Start a project</small><strong>Send me an email</strong></span></a>
+</div>
+<p class="contact-note">Portfolio note: Add your own project samples before sharing this site with potential clients.</p>
+</section>
+</main>
+<footer class="footer"><div class="wrap">© <span id="year"></span> Emaan Fatima · Freelancer Portfolio</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
